@@ -166,7 +166,7 @@ function getImageFile(req, res) {
 
 // deleteAnimal
 function deleteTeam(req, res) {
-    var teamUd = req.params.id;
+    var teamId = req.params.id;
 
     Team.findByIdAndRemove(teamId, (err, teamRemoved) => {
         if (err) {
