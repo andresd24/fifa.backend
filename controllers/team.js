@@ -153,7 +153,7 @@ function updloadImage(req, res) {
 // getImageFile
 function getImageFile(req, res) {
     var imageFile = req.params.imageFile;
-    var path_file = './uploads/animals/' + imageFile;
+    var path_file = './uploads/teams/' + imageFile;
 
     fs.exists(path_file, function(exists) {
         if (exists) {
